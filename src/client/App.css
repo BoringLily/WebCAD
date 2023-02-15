@@ -1,8 +1,53 @@
+body{
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0%;
+  padding: 0%;
+}
+
+.App{
+  display: grid;
+  grid-template-columns: 35% auto !important;
+  width: 100%;
+  height: 100vh;
+  margin: 0%;
+  padding: 0%;
+}
+
+#left-side{
+  height: 100vh;
+  grid-column: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  justify-items: start;
+}
+
+#editor-tool-bar{
+display: flex;
+flex-direction: row;
+}
+
+#editor{
+  height: 100%;
+  resize: none;
+}
+
+#right-side{
+  grid-column: 2 / 3;
+  width: 100%;
+  height: 100%;
+}
+
+#renderCanvasPlaceholder{
+background-color: bisque;
 }
 
 .logo {
@@ -11,9 +56,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
