@@ -10,9 +10,6 @@ const fs = require("fs");
 
 const app = express();
 
-
-
-
 app.get("/save",(req, res, data)=>{
 
   let geometry = cad.primitives.cuboid({size: [1, 1, 1] });
